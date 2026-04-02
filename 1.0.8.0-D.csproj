@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>LuafuscatorDeobf</AssemblyName>
+    <RootNamespace>LuafuscatorDeobf</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <Version>1.0.8</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Core -->
+    <Compile Include="src\Core\Program.cs" />
+    <Compile Include="src\Core\OutputWriter.cs" />
+
+    <!-- Decoding -->
+    <Compile Include="src\Decoding\GCallParser.cs" />
+    <Compile Include="src\Decoding\LuaStringDecoder.cs" />
+    <Compile Include="src\Decoding\LuaConstants.cs" />
+
+    <!-- Folding -->
+    <Compile Include="src\Folding\ConstantFolder.cs" />
+    <Compile Include="src\Folding\LocalVarTracer.cs" />
+
+    <!-- LFR -->
+    <Compile Include="src\LFR\LfrTableResolver.cs" />
+
+    <!-- AST -->
+    <Compile Include="src\AST\LuaLexer.cs" />
+    <Compile Include="src\AST\LuaParser.cs" />
+    <Compile Include="src\AST\LuaAst.cs" />
+    <Compile Include="src\AST\LuaRenamer.cs" />
+    <Compile Include="src\AST\LuaUnparser.cs" />
+
+    <!-- Utils -->
+    <Compile Include="src\Utils\StringClassifier.cs" />
+  </ItemGroup>
+
+</Project>
