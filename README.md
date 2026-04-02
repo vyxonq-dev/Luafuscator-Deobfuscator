@@ -1,7 +1,11 @@
 
 # Luafuscator Deobfuscator
 
-C# Deobfuscator for Luafuscator 1.0.8+
+**Deobfuscator for Luafuscator 1.0.8+**
+
+<p align="center">
+  <img src="images/screenshot.png" alt="Luafuscator Deobfuscator" width="700">
+</p>
 
 ## Usage
 
